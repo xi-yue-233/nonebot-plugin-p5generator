@@ -1,0 +1,2 @@
+nonebot~=1.8.0
+Pillow~=9.5.0
