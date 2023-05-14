@@ -47,6 +47,6 @@
 
 输入`p5预告信`后接你想要输入的内容即可生成：
 
-![946CE1499E017FE129710E8B6E2FB725](https://github.com/xi-yue-233/nonebot_plugin_p5generator/assets/58218656/1ebd99dd-bd50-41ca-9020-92ec9e6f5e91)
+![946CE1499E017FE129710E8B6E2FB725](https://github.com/xi-yue-233/nonebot-plugin-p5generator/assets/58218656/0a19bacc-bde4-4693-93e7-83678bde4835)
 
-![5C4D9FCBE4F060A12612D6062287E7E6](https://github.com/xi-yue-233/nonebot_plugin_p5generator/assets/58218656/24cff319-05d6-4e32-85a0-f3e78186d8d3)
+![5C4D9FCBE4F060A12612D6062287E7E6](https://github.com/xi-yue-233/nonebot-plugin-p5generator/assets/58218656/4aade3a7-34a0-4e81-96ea-612146b76808)
