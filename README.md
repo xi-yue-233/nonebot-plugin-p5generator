@@ -25,8 +25,8 @@
 <details>
 <summary>nb-cli安装</summary>
 在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
-
-   nb plugin install nonebot-plugin-p5generator
+  
+    nb plugin install nonebot-plugin-p5generator
 
 </details>
 
