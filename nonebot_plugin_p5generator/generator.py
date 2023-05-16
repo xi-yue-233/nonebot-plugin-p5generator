@@ -1,3 +1,4 @@
+import os.path
 from base64 import b64encode
 from io import BytesIO
 from pathlib import Path
@@ -12,15 +13,14 @@ RESOURCES_PATH.mkdir(parents=True, exist_ok=True)
 
 async def generate_image(text):
     # 设置字体列表
-    fonts = [f'{RESOURCES_PATH}\\msyh.ttc', f'{RESOURCES_PATH}\\STHUPO.TTF', f'{RESOURCES_PATH}\\simsun.ttc',
-             f'{RESOURCES_PATH}\\msyhbd.ttc', f'{RESOURCES_PATH}\\simhei.ttf']
+    fonts = ['msyh.ttc', 'STHUPO.TTF', 'simsun.ttc', 'msyhbd.ttc', 'simhei.ttf']
     # 设置颜色列表
     colors = ['white', 'black', 'gray', 'red']
     # 设置背景颜色列表
     bg_colors = {'white': ['black', 'gray'], 'black': ['white', 'gray'], 'gray': ['white', 'black'], 'red': ['white']}
 
     # 打开背景图片
-    background_image = Image.open(f'{RESOURCES_PATH}\\background.png')
+    background_image = Image.open(os.path.join(RESOURCES_PATH, "background.png"))
 
     # 获取背景图片大小
     width, height = background_image.size
@@ -38,7 +38,8 @@ async def generate_image(text):
         text_size = min(1770 // len(sentence), 1300 // (sentences_count + 6))
         for char in sentence:
             # 随机选择字体和大小
-            font = ImageFont.truetype(random.choice(fonts), random.randint(text_size, text_size + 20))
+            font = ImageFont.truetype(os.path.join(RESOURCES_PATH, random.choice(fonts)),
+                                      random.randint(text_size, text_size + 20))
             # 获取字符大小
             char_width, char_height = font.getsize(char)
             max_char_height = max(max_char_height, char_height)
@@ -56,7 +57,8 @@ async def generate_image(text):
         text_size = min(1770 // (len(sentence) + 6), 1300 // (sentences_count + 6))
         for char in sentence:
             # 随机选择字体和大小
-            font = ImageFont.truetype(random.choice(fonts), random.randint(text_size, text_size + 20))
+            font = ImageFont.truetype(os.path.join(RESOURCES_PATH, random.choice(fonts)),
+                                      random.randint(text_size, text_size + 20))
             # 获取字符大小
             char_width, char_height = font.getsize(char)
             sentence_width += char_width + 20
@@ -67,7 +69,8 @@ async def generate_image(text):
         # 遍历句子中的每个字符
         for index, char in enumerate(sentence):
             # 随机选择字体和大小
-            font = ImageFont.truetype(random.choice(fonts), random.randint(text_size, text_size + 20))
+            font = ImageFont.truetype(os.path.join(RESOURCES_PATH, random.choice(fonts)),
+                                      random.randint(text_size, text_size + 20))
             # 随机选择颜色
             color = random.choice(colors)
             # 根据颜色选择背景颜色
