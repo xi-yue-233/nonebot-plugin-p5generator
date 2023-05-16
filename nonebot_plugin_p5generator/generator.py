@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 import random
 
 RESOURCES_PATH = Path() / 'data' / 'p5generator'
-RESOURCES_PATH.mkdir(exist_ok=True)
+RESOURCES_PATH.mkdir(parents=True, exist_ok=True)
 
 
 async def generate_image(text):
