@@ -12,7 +12,7 @@
 
 ## 💬 前言
 
-可以生成仿《女神异闻录5》中心之怪盗团向罪人宣战的预告信，做的不太好请见谅
+可以生成仿《女神异闻录5》中心之怪盗团向罪人宣战的预告信和UI，做的不太好请见谅
 
 ## 📖 介绍
 
@@ -50,3 +50,14 @@
 ![946CE1499E017FE129710E8B6E2FB725](https://github.com/xi-yue-233/nonebot-plugin-p5generator/assets/58218656/0a19bacc-bde4-4693-93e7-83678bde4835)
 
 ![5C4D9FCBE4F060A12612D6062287E7E6](https://github.com/xi-yue-233/nonebot-plugin-p5generator/assets/58218656/4aade3a7-34a0-4e81-96ea-612146b76808)
+
+输入`p5ui`后接你想要输入的内容即可生成：
+
+![B@C0RM X1D~R KV E`R@OQ9](https://github.com/xi-yue-233/nonebot-plugin-p5generator/assets/58218656/6d727c63-25d6-4937-b3de-17e3a95c57a3)
+
+![8B9B74C29BC2BD25DA436A7B73E9A461](https://github.com/xi-yue-233/nonebot-plugin-p5generator/assets/58218656/d9b9033c-01f1-4a99-9cb0-efcf1dc5e9b0)
+
+
+## 🎉 感谢
+
+感谢Suica0w0 https://github.com/Suica0w0 提供的生成p5rui功能
