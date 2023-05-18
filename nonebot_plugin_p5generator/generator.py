@@ -12,11 +12,11 @@ RESOURCES_PATH.mkdir(parents=True, exist_ok=True)
 
 async def generate_image(text):
     # 设置字体列表
-    fonts = ['msyh.ttc', 'STHUPO.TTF', 'simsun.ttc', 'msyhbd.ttc', 'simhei.ttf']
+    fonts = ['msyhbd.ttc']
     # 设置颜色列表
-    colors = ['white', 'black', 'gray', 'red']
+    colors = ['white', 'red']
     # 设置背景颜色列表
-    bg_colors = {'white': ['black', 'gray'], 'black': ['white', 'gray'], 'gray': ['white', 'black'], 'red': ['white']}
+    bg_colors = {'white': ['black', 'red'], 'red': ['black']}
 
     # 打开背景图片
     background_image = Image.open(os.path.join(RESOURCES_PATH, "background.png"))
@@ -82,7 +82,7 @@ async def generate_image(text):
             char_draw = ImageDraw.Draw(char_image)
 
             # 绘制背景色块
-            char_draw.rectangle((0, 0, char_width, char_height), fill=bg_color)
+            char_draw.rectangle((0, 0, char_width, char_height), fill=bg_color, outline='white', width=7)
             # 绘制字符
             char_draw.text((0, 0), char, fill=color, font=font)
 
